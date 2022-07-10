@@ -1,0 +1,65 @@
+$breakpoint1200: 1199.98 + px;
+$breakpoint992: 991.98 + px;
+$breakpoint768: 767.98 + px;
+$breakpoint400: 399.98 + px;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+@font-face {
+  font-family: 'Circular Std';
+  src: url('/lifestylecommunities/fonts/ACaslonPro-Bold.eot');
+  src: local('Circular Std Bold'), local('CircularStd-Bold'),
+      url('/lifestylecommunities/fonts/CircularStd-Bold.eot?#iefix') format('embedded-opentype'),
+      url('/lifestylecommunities/fonts/CircularStd-Bold.woff') format('woff'),
+      url('/lifestylecommunities/fonts/CircularStd-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Circular Std';
+  src: url('/lifestylecommunities/fonts/ACaslonPro-Book.eot');
+  src: local('Circular Std Bold'), local('CircularStd-Book'),
+      url('/lifestylecommunities/fonts/ACaslonPro-Book.eot?#iefix') format('embedded-opentype'),
+      url('/lifestylecommunities/fonts/ACaslonPro-Book.woff') format('woff'),
+      url('/lifestylecommunities/fonts/ACaslonPro-Book.ttf') format('truetype');
+  font-weight:normal;
+  font-style: normal;
+}
+
+body {
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    font-family: 'Circular Std';
+  }
+
+  a{
+    text-decoration: none;
+  }
+
+  a:-webkit-any-link,
+  a:-webkit-any-link:active,
+  a:-webkit-any-link:focus-visible,
+  a:focus-visible,
+  a:active,
+  a:visited,
+  a:focus{
+    text-decoration: none;
+    border: none;
+    outline: none;
+  }
+
+  .section_container{
+    max-width:1822px;
+    margin:0px auto;
+    padding:0px 15px;
+  }
+
+  .hidden-caption-content{
+    display:none;
+  }
+  
+
+

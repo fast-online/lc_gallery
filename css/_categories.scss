@@ -1,0 +1,108 @@
+.categories_background{
+    background-color: #FFF;
+
+}
+
+.categories_section{
+    padding:44px 0px 44px 0px;
+
+    display:flex;
+    flex-direction: column;
+    gap:30px;
+
+    @media(max-width:$breakpoint1200){
+        gap:15px;
+    }
+
+    @media(max-width:$breakpoint768){
+        padding:24px 0px 24px 0px;
+        gap:5px;
+    }
+
+    h1{
+        color: #3D3A36;
+        font-size:75px;
+        line-height: 1.1;
+
+        @media(max-width:$breakpoint768){
+            font-size:48px;
+        }
+
+    }
+
+    .categories_grid{
+
+        display:grid;
+        grid-template-columns: repeat(auto-fill,minmax(31%, 1fr));
+        grid-auto-rows: 1fr;
+        gap:35px 41px;
+
+        @media (max-width:$breakpoint1200){
+            grid-template-columns: repeat(auto-fill,minmax(47%, 1fr)); 
+        }
+
+        @media (max-width:$breakpoint768){
+            grid-template-columns: repeat(auto-fill,minmax(100%, 1fr)); 
+            gap:15px 41px;
+        }
+
+        .categories_item{
+            
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            height:auto;
+            min-height:320px;
+            text-decoration: none;
+            position: relative;
+            overflow: hidden;
+
+            &::after{
+                position:absolute;
+                content:'';
+                width: 100%;
+                height:100%;
+                background:black;
+                opacity:0.2;
+                transition:0.6s;
+            }
+
+            h5{
+                height: fit-content;
+                font-size: 24px;
+                line-height: 1.3;
+                color:#fff;
+                position: absolute;
+                left:0;
+                right:0;
+                bottom:5px;
+                margin:auto;
+                z-index:2;
+                padding:0px 15px;
+            }
+
+            .categories_item_image{
+                object-fit: cover;
+                max-width: 100%;
+                max-height: 100%;
+                width: 100%;
+                height: 100%;
+                transition: 0.6s;
+                min-height: 320px;
+            }
+
+            &:hover{
+                .categories_item_image{
+                    transform: scale(1.1);
+                }
+                &::after{
+                    opacity:0.5;
+                }
+            }
+
+        }
+
+    }
+
+}
